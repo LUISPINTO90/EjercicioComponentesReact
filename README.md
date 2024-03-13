@@ -1,7 +1,7 @@
 <div align="center">
       <h2>
         <a
-          href="https://luispinto90.github.io/EjercicioComponentesReact/"
+          href="https://componentes-react.netlify.app/"
           target="_blank"
           >Componentes de React</a
         >
