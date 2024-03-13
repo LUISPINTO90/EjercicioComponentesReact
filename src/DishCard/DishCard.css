@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.dish-card {
+  font-family: "Inter", sans-serif;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  margin-bottom: 20px;
+  max-width: 700px;
+}
+
+.dish-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dish-card img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.dish-card-content {
+  padding: 16px;
+}
+
+.dish-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.dish-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 4px;
+  color: #666;
+}
+
+.dish-card p {
+  font-size: 1rem;
+  margin-bottom: 4px;
+  color: #888;
+}
+
+.stock-status {
+  font-size: 0.875rem;
+  color: #333;
+}
+
+.stock-status.out-of-stock {
+  color: #ff6347;
+}
+
+@media (max-width: 768px) {
+  .dish-card {
+    max-width: 300px;
+    margin: 0 auto 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .dish-card {
+    max-width: 100%;
+  }
+}
+
+.dish-card-content {
+  padding: 16px 20px;
+}
+
+.dish-card img {
+  max-width: 400px;
+}
+
+.dishes-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
